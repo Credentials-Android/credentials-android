@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Privacy Policy for Credentials Android App">
+  <title>Privacy Policy - Credentials</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 20px;
+      line-height: 1.7;
+      color: #263238;
+      background: #f3f6fb;
+    }
+    main {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+    }
+    h1, h2 { color: #174ea6; }
+    a { color: #174ea6; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p>Effective date: November 13, 2026</p>
+
+  <p>
+    Credentials ("we", "our", or "the app") is a secure
+    credentials management application that helps users
+    store and manage their login information.
+  </p>
+
+  <h2>1. Information We Collect</h2>
+  <p>
+    We may process the following information:
+  </p>
+  <ul>
+    <li>Email address used for Firebase Authentication.</li>
+    <li>Account profile information, if provided.</li>
+    <li>Login credentials saved by users in the application.</li>
+    <li>Information necessary to operate and secure the app.</li>
+  </ul>
+
+  <h2>2. How We Store and Protect Information</h2>
+  <p>
+    User-saved credentials are encrypted in the application
+    using AES-GCM before being stored in Cloud Firestore.
+    Encryption keys are derived from the user's sign-in
+    password.
+  </p>
+  <p>
+    Firebase Authentication and Cloud Firestore are used
+    to provide authentication and cloud storage services.
+    Data is transmitted using secure HTTPS connections.
+  </p>
+  <p>
+    Firebase also applies its own security measures,
+    including encryption in transit and at rest.
+  </p>
+
+  <h2>3. How We Use Information</h2>
+  <ul>
+    <li>To authenticate users.</li>
+    <li>To store and synchronize saved credentials.</li>
+    <li>To provide account management functionality.</li>
+    <li>To maintain application security and reliability.</li>
+  </ul>
+
+  <h2>4. Data Sharing</h2>
+  <p>
+    We do not sell users' personal information.
+    Information is processed through Firebase services
+    to operate the application. We do not share saved
+    credentials with third parties for advertising.
+  </p>
+
+  <h2>5. Account and Data Deletion</h2>
+  <p>
+    Users can delete their accounts directly from the app
+    through the Delete Account option.
+  </p>
+  <p>
+    Users who cannot access the application can request
+    account deletion by contacting:
+  </p>
+  <p>
+    <a href="mailto:mdsafiuddin89@gmail.com">
+      mdsafiuddin89@gmail.com
+    </a>
+  </p>
+  <p>
+    Associated personal information and saved credentials
+    will be deleted when the request is processed, subject
+    to applicable legal retention requirements.
+  </p>
+  <p>
+    Account deletion instructions:
+    <a href="https://mdsafiuddin89.github.io/credential-manager-deletion/">
+      Account Deletion Page
+    </a>
+  </p>
+
+  <h2>6. Data Security</h2>
+  <p>
+    We use encryption and Firebase security rules to help
+    protect user information. However, no electronic
+    storage or transmission method can guarantee absolute
+    security.
+  </p>
+
+  <h2>7. Children's Privacy</h2>
+  <p>
+    The application is not specifically designed for
+    children. We do not knowingly collect personal
+    information from children in violation of applicable law.
+  </p>
+
+  <h2>8. Changes to This Policy</h2>
+  <p>
+    We may update this Privacy Policy from time to time.
+    Any changes will be published on this page.
+  </p>
+
+  <h2>9. Contact Us</h2>
+  <p>
+    For questions about this Privacy Policy or your data,
+    contact us at:
+  </p>
+  <p>
+    <a href="mailto:mdsafiuddin89@gmail.com">
+      mdsafiuddin89@gmail.com
+    </a>
+  </p>
+</main>
+</body>
+</html>

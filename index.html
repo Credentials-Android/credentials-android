@@ -1,88 +1,177 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="color-scheme" content="light" />
-  <meta name="description" content="Request deletion of your Credentials account and associated data." />
-  <title>Request Account Deletion — Credentials</title>
-  <style>
-    :root {
-      color-scheme: light;
-      font-family: Arial, sans-serif;
-      color: #263238;
-      background: #f3f6fb;
-    }
-
-    body {
-      box-sizing: border-box;
-      max-width: 760px;
-      margin: 48px auto;
-      padding: 0 20px;
-      line-height: 1.65;
-    }
-
-    main {
-      padding: 32px;
-      background: #fff;
-      border: 1px solid #dce3ed;
-      border-radius: 12px;
-      box-shadow: 0 12px 32px rgba(23, 55, 94, 0.08);
-    }
-
-    h1, h2 { color: #174ea6; line-height: 1.25; }
-    h1 { margin-top: 0; }
-    h2 { margin-top: 28px; font-size: 1.15rem; }
-    .request {
-      display: inline-block;
-      margin: 12px 0;
-      padding: 12px 18px;
-      border-radius: 6px;
-      background: #174ea6;
-      color: #fff;
-      font-weight: 700;
-      text-decoration: none;
-    }
-    .request:hover, .request:focus { background: #123d82; }
-    .contact { overflow-wrap: anywhere; }
-
-    @media (max-width: 520px) {
-      body { margin: 20px auto; padding: 0 12px; }
-      main { padding: 22px 18px; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101c35">
+<meta name="description" content="Credentials is an Android credentials manager with AES-GCM encrypted credential storage.">
+<title>Credentials - Secure Credentials Manager</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #253247;
+  background: #f5f7fb;
+  line-height: 1.6;
+}
+header {
+  background: #101c35;
+  color: white;
+  padding: 20px;
+}
+nav, .container {
+  max-width: 1050px;
+  margin: auto;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.brand { font-size: 23px; font-weight: bold; }
+nav a { color: white; text-decoration: none; margin-left: 15px; }
+.hero {
+  background: #101c35;
+  color: white;
+  padding: 75px 20px;
+  text-align: center;
+}
+.hero h1 { font-size: clamp(32px, 6vw, 50px); margin: 0 0 15px; }
+.hero p {
+  max-width: 650px;
+  margin: 0 auto 25px;
+  color: #d5dfef;
+}
+.button {
+  display: inline-block;
+  background: #2463d3;
+  color: white;
+  padding: 14px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.button:hover { background: #174ba9; }
+.section {
+  max-width: 1050px;
+  margin: 55px auto;
+  padding: 0 20px;
+}
+.section h2 { text-align: center; color: #174ea6; }
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+.feature {
+  background: white;
+  border: 1px solid #e1e7f0;
+  border-radius: 12px;
+  padding: 24px;
+}
+.feature h3 { color: #174ea6; }
+.download {
+  background: white;
+  text-align: center;
+  padding: 35px 20px;
+  border-radius: 12px;
+  border: 1px solid #e1e7f0;
+}
+footer {
+  background: #101c35;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+}
+footer a { color: #b9d1ff; margin: 8px; }
+.small { color: #68768b; font-size: 13px; }
+@media(max-width:600px) {
+  nav { justify-content: center; }
+  nav a { margin: 5px; }
+}
+</style>
 </head>
 <body>
-  <main>
-    <h1>Account deletion request</h1>
-    <p>
-      This page explains how Credentials users can delete their accounts and
-      request deletion of associated data.
-    </p>
 
-    <h2>Delete your account in the app</h2>
-    <ol>
-      <li>Open Credentials and sign in.</li>
-      <li>Open the dashboard navigation menu.</li>
-      <li>Select <strong>Delete Account</strong> and confirm.</li>
-    </ol>
-    <p>
-      This process deletes your Firebase Authentication account, profile,
-      saved credentials, and activity logs associated with your account.
-    </p>
+<header>
+<nav>
+  <div class="brand">🔐 Credentials</div>
+  <div>
+    <a href="#features">Features</a>
+    <a href="#download">Download</a>
+    <a href="privacy-policy.html">Privacy</a>
+  </div>
+</nav>
+</header>
 
-    <h2>Request deletion if you cannot sign in</h2>
-    <p>
-      Email us from the email address associated with your Credentials account.
-      Include that account email in your request, but do not include your password
-      or saved credentials. We will verify the request before processing deletion.
-    </p>
-    <a class="request" href="mailto:mdsafiuddin89@gmail.com?subject=Account%20deletion%20request">
-      Email an account deletion request
-    </a>
-    <p class="contact">
-      Contact: <a href="mailto:mdsafiuddin89@gmail.com">mdsafiuddin89@gmail.com</a>
-    </p>
-  </main>
+<section class="hero">
+  <h1>Your credentials. One secure place.</h1>
+  <p>
+    Store, organize, update and manage your login information
+    with AES-GCM encrypted credential storage.
+  </p>
+  <a class="button"
+     href="https://github.com/mdsafiuddin89/credentials-android-releases/releases/latest/download/credentials-release-signed.apk">
+     Download for Android
+  </a>
+  <p class="small">Version 1.0.0 · Android APK · Free download</p>
+</section>
+
+<section class="section" id="features">
+<h2>Features</h2>
+<div class="features">
+
+  <div class="feature">
+    <h3>🔒 AES-GCM Encryption</h3>
+    <p>Saved login credentials are encrypted in the app before being stored.</p>
+  </div>
+
+  <div class="feature">
+    <h3>☁️ Cloud Synchronization</h3>
+    <p>Cloud storage powered by Firebase Firestore.</p>
+  </div>
+
+  <div class="feature">
+    <h3>👤 Secure Authentication</h3>
+    <p>Sign in and manage your account using Firebase Authentication.</p>
+  </div>
+
+  <div class="feature">
+    <h3>📁 Credential Management</h3>
+    <p>Save, organize and update your login information in one place.</p>
+  </div>
+
+</div>
+</section>
+
+<section class="section" id="download">
+<div class="download">
+  <h2>Download Credentials</h2>
+  <p>Get the Android application and manage your credentials.</p>
+  <a class="button"
+     href="https://github.com/mdsafiuddin89/credentials-android-releases/releases/latest/download/credentials-release-signed.apk">
+     Download APK
+  </a>
+  <p class="small">
+    Android may ask you to allow installation from your browser.
+    Only install updates from our official release page.
+  </p>
+</div>
+</section>
+
+<footer>
+  <p>© 2026 Credentials. All rights reserved.</p>
+  <p>
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="./">Account Deletion</a>
+    <a href="mailto:mdsafiuddin89@gmail.com">Contact</a>
+  </p>
+  <p class="small">Android application distributed through GitHub Releases.</p>
+</footer>
+
 </body>
 </html>

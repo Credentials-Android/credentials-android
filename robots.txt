@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://mdsafiuddin89.github.io/credentials-android/sitemap.xml

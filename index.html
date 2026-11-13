@@ -7,8 +7,10 @@
 <meta name="theme-color" content="#101c35">
 <meta name="description" content="Credentials is an Android credentials manager with AES-GCM encrypted credential storage.">
 <title>Credentials - Secure Credentials Manager</title>
+
 <style>
 * { box-sizing: border-box; }
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -16,15 +18,18 @@ body {
   background: #f5f7fb;
   line-height: 1.6;
 }
+
 header {
   background: #101c35;
   color: white;
   padding: 20px;
 }
+
 nav, .container {
   max-width: 1050px;
   margin: auto;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -32,20 +37,40 @@ nav {
   flex-wrap: wrap;
   gap: 12px;
 }
-.brand { font-size: 23px; font-weight: bold; }
-nav a { color: white; text-decoration: none; margin-left: 15px; }
+
+.brand {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+nav a:hover {
+  color: #b9d1ff;
+}
+
 .hero {
   background: #101c35;
   color: white;
   padding: 75px 20px;
   text-align: center;
 }
-.hero h1 { font-size: clamp(32px, 6vw, 50px); margin: 0 0 15px; }
+
+.hero h1 {
+  font-size: clamp(32px, 6vw, 50px);
+  margin: 0 0 15px;
+}
+
 .hero p {
   max-width: 650px;
   margin: 0 auto 25px;
   color: #d5dfef;
 }
+
 .button {
   display: inline-block;
   background: #2463d3;
@@ -55,25 +80,39 @@ nav a { color: white; text-decoration: none; margin-left: 15px; }
   text-decoration: none;
   font-weight: bold;
 }
-.button:hover { background: #174ba9; }
+
+.button:hover {
+  background: #174ba9;
+}
+
 .section {
   max-width: 1050px;
   margin: 55px auto;
   padding: 0 20px;
 }
-.section h2 { text-align: center; color: #174ea6; }
+
+.section h2 {
+  text-align: center;
+  color: #174ea6;
+}
+
 .features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 18px;
 }
+
 .feature {
   background: white;
   border: 1px solid #e1e7f0;
   border-radius: 12px;
   padding: 24px;
 }
-.feature h3 { color: #174ea6; }
+
+.feature h3 {
+  color: #174ea6;
+}
+
 .download {
   background: white;
   text-align: center;
@@ -81,48 +120,76 @@ nav a { color: white; text-decoration: none; margin-left: 15px; }
   border-radius: 12px;
   border: 1px solid #e1e7f0;
 }
+
 footer {
   background: #101c35;
   color: white;
   text-align: center;
   padding: 30px 15px;
 }
-footer a { color: #b9d1ff; margin: 8px; }
-.small { color: #68768b; font-size: 13px; }
+
+footer a {
+  color: #b9d1ff;
+  margin: 8px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.small {
+  color: #68768b;
+  font-size: 13px;
+}
+
 @media(max-width:600px) {
-  nav { justify-content: center; }
-  nav a { margin: 5px; }
+  nav {
+    justify-content: center;
+  }
+
+  nav a {
+    margin: 5px;
+  }
 }
 </style>
 </head>
+
 <body>
 
 <header>
 <nav>
   <div class="brand">🔐 Credentials</div>
+
   <div>
     <a href="#features">Features</a>
     <a href="#download">Download</a>
-    <a href="privacy-policy.html">Privacy</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="account-deletion.html">Account Deletion</a>
   </div>
 </nav>
 </header>
 
 <section class="hero">
   <h1>Your credentials. One secure place.</h1>
+
   <p>
     Store, organize, update and manage your login information
     with AES-GCM encrypted credential storage.
   </p>
+
   <a class="button"
      href="https://github.com/mdsafiuddin89/credentials-android-releases/releases/latest/download/credentials-release.apk">
      Download for Android
   </a>
+
   <p class="small">Version 1.0.0 · Android APK · Free download</p>
 </section>
 
 <section class="section" id="features">
 <h2>Features</h2>
+
 <div class="features">
 
   <div class="feature">
@@ -150,27 +217,39 @@ footer a { color: #b9d1ff; margin: 8px; }
 
 <section class="section" id="download">
 <div class="download">
+
   <h2>Download Credentials</h2>
+
   <p>Get the Android application and manage your credentials.</p>
+
   <a class="button"
      href="https://github.com/mdsafiuddin89/credentials-android-releases/releases/latest/download/credentials-release.apk">
      Download APK
   </a>
+
   <p class="small">
     Android may ask you to allow installation from your browser.
     Only install updates from our official release page.
   </p>
+
 </div>
 </section>
 
 <footer>
+
   <p>© 2026 Credentials. All rights reserved.</p>
+
   <p>
+    <a href="index.html">Home</a>
     <a href="privacy-policy.html">Privacy Policy</a>
-    <a href="./">Account Deletion</a>
+    <a href="account-deletion.html">Account Deletion</a>
     <a href="mailto:mdsafiuddin89@gmail.com">Contact</a>
   </p>
-  <p class="small">Android application distributed through GitHub Releases.</p>
+
+  <p class="small">
+    Android application distributed through GitHub Releases.
+  </p>
+
 </footer>
 
 </body>
